@@ -1,0 +1,9 @@
+@use "./variables" as *;
+//ページ全体のデフォルトの文字をゴシック体
+body {
+  font-family: $fontfamily-gothic;
+}
+/* 使用例 */
+h2 {
+  font-size: 38px;
+}

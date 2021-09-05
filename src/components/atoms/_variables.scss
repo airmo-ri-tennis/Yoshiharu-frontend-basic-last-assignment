@@ -1,0 +1,33 @@
+$color-example: #ff0000;
+$fontsize-example: 16px;
+
+//Color
+$wihte: #ffffff;
+$white_smoke: #f5f5f5;
+$gray_desertStorm: #ece9e6;
+$gray_gainsboro: #dddddd;
+$gray_nobel: #999999;
+$orange_zorba: #a19283;
+$orange_bistre: #442606;
+$black_50: rgba(0, 0, 0, 0.5);
+$black: #000000;
+
+//font-size
+$XS: 12px;
+$S: 14px;
+$M: 16px;
+$L: 20px;
+$XL: 36px;
+$XLL: 40px;
+
+//font-family
+$fontfamily-mincho: "明朝体", "Roboto", "Noto Serif JP", "Noto Sans JP";
+$fontfamily-gothic: "游ゴシック体", "Roboto", "Noto Serif JP", "Noto Sans JP";
+
+//grid-breakpoints
+$breakpoints-xs: 0;
+$breakpoints-sm: 576px;
+$breakpoints-md: 768px;
+$breakpoints-lg: 992px;
+$breakpoints-xl: 1200px;
+$breakpoints-xxl: 1400px;
