@@ -13,19 +13,18 @@ $black_50: rgba(0, 0, 0, 0.5);
 $black: #000000;
 
 //font-size
-$XS: 12px;
-$S: 14px;
-$M: 16px;
-$L: 20px;
-$XL: 36px;
-$XLL: 40px;
+$font-sizeXS: 12px;
+$font-sizeS: 14px;
+$font-sizeM: 16px;
+$font-sizeL: 20px;
+$font-sizeXL: 36px;
+$font-sizeXLL: 40px;
 
 //font-family
-$fontfamily-mincho: "明朝体", "Roboto", "Noto Serif JP", "Noto Sans JP";
-$fontfamily-gothic: "游ゴシック体", "Roboto", "Noto Serif JP", "Noto Sans JP";
+$fontfamily-mincho: "Roboto", "Noto Serif JP", "Noto Sans JP";
+$fontfamily-gothic: "Roboto", "Noto Serif JP", "Noto Sans JP";
 
 //grid-breakpoints
-$breakpoints-xs: 0;
 $breakpoints-sm: 576px;
 $breakpoints-md: 768px;
 $breakpoints-lg: 992px;
