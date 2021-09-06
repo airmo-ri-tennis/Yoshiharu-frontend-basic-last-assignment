@@ -2,7 +2,7 @@ $color-example: #ff0000;
 $fontsize-example: 16px;
 
 //Color
-$wihte: #ffffff;
+$white: #ffffff;
 $white_smoke: #f5f5f5;
 $gray_desertStorm: #ece9e6;
 $gray_gainsboro: #dddddd;
@@ -18,11 +18,11 @@ $font-sizeS: 14px;
 $font-sizeM: 16px;
 $font-sizeL: 20px;
 $font-sizeXL: 36px;
-$font-sizeXLL: 40px;
+$font-sizeXXL: 40px;
 
 //font-family
-$fontfamily-mincho: "Roboto", "Noto Serif JP", "Noto Sans JP";
-$fontfamily-gothic: "Roboto", "Noto Serif JP", "Noto Sans JP";
+$fontfamily-mincho: "Noto Serif JP", serif;
+$fontfamily-gothic: "Roboto", "Noto Sans JP", sans-serif;
 
 //grid-breakpoints
 $breakpoints-sm: 576px;
