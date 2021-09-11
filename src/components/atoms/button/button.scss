@@ -1,10 +1,7 @@
 @use "../../variables" as *;
-@use "../../utilities.scss" as *;
 
-.btn {
+.button {
   display: flex;
-  position: absolute;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0px 16px;
@@ -26,12 +23,11 @@
   //$breakpoints-md//
   @media screen and(min-width:$breakpoints-md) {
     width: 150px;
-    height: 55px;
   }
 
   //$breakpoint-lg//
   @media screen and(min-width:$breakpoints-lg) {
     width: 200px;
-    height: 55px;
+    height: 50px;
   }
 }
