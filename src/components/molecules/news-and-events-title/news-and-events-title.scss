@@ -1,0 +1,26 @@
+@use "../../variables" as *;
+
+.news-wraper {
+  display: flex;
+  align-items: center;
+
+  .news-title {
+    line-height: 29px;
+    font-size: $font-sizeL;
+    font-family: $fontfamily-mincho;
+    font-weight: 400;
+
+    @media screen and (min-width: $breakpoints-lg) {
+      line-height: 57px;
+      font-size: $font-sizeXXL;
+    }
+  }
+
+  .announcement {
+    margin-left: 16px;
+    font-size: $font-sizeM;
+    line-height: 23px;
+  }
+}
+
+
