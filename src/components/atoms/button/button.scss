@@ -8,25 +8,21 @@
   width: 180px;
   height: 45px;
   transition: 0.2s ease;
-  //color//
   background-color: $black;
   color: $white;
-  //font-size//
   font-size: $font-sizeS;
-  //hover//
+
   &:hover {
     background-color: $orange_bistre;
     color: $white;
     text-decoration: none;
   }
 
-  //$breakpoints-md//
   @media screen and(min-width:$breakpoints-md) {
     width: 150px;
     height: 55px;
   }
 
-  //$breakpoint-lg//
   @media screen and(min-width:$breakpoints-lg) {
     width: 200px;
   }

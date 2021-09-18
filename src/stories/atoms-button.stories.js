@@ -1,5 +1,3 @@
-/* src/stories/atoms-example.stories.js */
-
 import Atoms_Button from "../components/atoms/button/button.html";
 import "../components/atoms/button/button.scss";
 
