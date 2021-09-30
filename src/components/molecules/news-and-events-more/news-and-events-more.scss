@@ -1,8 +1,7 @@
 @use "../../variables" as *;
-a {
+.news_list {
   font-size: $font-sizeS;
   line-height: 20px;
-  font-weight: 400;
   color: $black;
   transition: ease 0.2s;
 
