@@ -1,13 +1,14 @@
 @use "../../variables" as *;
 .message-wraper {
-  text-align: center;
-  flex-direction: column;
+  display: flex;
   align-items: center;
+  flex-direction: column;
 
   h1 {
     font-size: $font-sizeL;
     font-family: $fontfamily-mincho;
     margin-bottom: 6px;
+    line-height: 36px;
 
     @media screen and(min-width:$breakpoints-lg) {
       font-size: $font-sizeXL;
@@ -16,8 +17,6 @@
   }
 
   p {
-    align-items: center;
-    justify-content: center;
     font-size: $font-sizeS;
     line-height: 28px;
 
