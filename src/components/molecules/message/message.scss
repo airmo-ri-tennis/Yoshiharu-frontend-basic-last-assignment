@@ -1,5 +1,5 @@
 @use "../../variables" as *;
-.message-wraper {
+.message-wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -22,10 +22,7 @@
     h1 {
       font-size: $font-sizeXL;
       margin-bottom: 10px;
-    }
-    p {
-      line-height: 36px;
-      margin-bottom: 0px;
+      padding: 52px 20px;
     }
   }
 }
