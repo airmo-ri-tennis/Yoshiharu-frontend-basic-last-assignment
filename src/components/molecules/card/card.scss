@@ -1,0 +1,35 @@
+@use "../../variables" as *;
+
+.card {
+  .card-title {
+    position: absolute;
+    z-index: 2;
+    color: $orange_bistre;
+    font-size: $font-sizeL;
+    margin: 0;
+    padding-left: 3px;
+  }
+  &::before {
+    z-index: 443;
+    position: absolute;
+    border-bottom: solid 150px transparent;
+    border-left: solid 150px white;
+    content: "";
+  }
+}
+.card-body {
+  padding: 0 35px 32px;
+  background-color: $white-smoke;
+
+  .card-text {
+    margin-bottom: 30px;
+    line-height: 42px;
+    font-size: $font-sizeS;
+    text-align: center;
+    position: relative;
+  }
+  a.button {
+    margin: auto;
+    font-size: $font-sizeXS;
+  }
+}
