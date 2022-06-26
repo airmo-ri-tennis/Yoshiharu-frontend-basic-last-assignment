@@ -1,24 +1,22 @@
 @use "../../variables" as *;
-
 .card {
-  .card-title {
-    position: absolute;
-    z-index: 2;
-    color: $orange_bistre;
-    font-size: $font-sizeL;
-    margin: 0;
-    padding-left: 3px;
-  }
   &::before {
-    z-index: 443;
     position: absolute;
     border-bottom: solid 150px transparent;
     border-left: solid 150px white;
     content: "";
   }
+  .card-title {
+    padding-left: 6px;
+    position: absolute;
+    color: $orange_bistre;
+    font-size: $font-sizeL;
+    font-weight: bold;
+    margin: 0;
+  }
 }
 .card-body {
-  padding: 0 35px 32px;
+  padding: 32px;
   background-color: $white-smoke;
 
   .card-text {
@@ -26,10 +24,15 @@
     line-height: 42px;
     font-size: $font-sizeS;
     text-align: center;
-    position: relative;
   }
-  a.button {
-    margin: auto;
-    font-size: $font-sizeXS;
+}
+a.button {
+  margin: auto;
+  font-size: $font-sizeS;
+  .concept {
+    height: 20px;
+    padding: 17.5px 49px;
+    line-height: 20px;
+    align-items: center;
   }
 }
