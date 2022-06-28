@@ -14,20 +14,18 @@
   .price-outline {
     height: 142px;
     padding: 24px 0px;
-    border: 1px solid $gray_gainsboro;
     background-color: $gray_desertStorm;
-  }
-  .plan-price {
-    margin-top: 24px;
+    border: 1px solid $gray_gainsboro;
   }
   .yen {
-    padding: 53px 0px;
     font-size: $font-sizeL;
     font-weight: bold;
+    color: $orange_bistre;
   }
   .five-thouthand {
     font-weight: bold;
     font-size: $font-sizeXXL;
+    color: $orange_bistre;
   }
   .monthly_amount {
     font-size: $font-sizeS;
@@ -38,7 +36,9 @@
     background-color: $white;
     font-size: $font-sizeS;
     list-style-type: none;
-    border: solid 1px $gray_gainsboro;
+    border-bottom: solid 1px $gray_gainsboro;
+    border-right: solid 1px $gray_gainsboro;
+    border-left: solid 1px $gray_gainsboro;
   }
 }
 
