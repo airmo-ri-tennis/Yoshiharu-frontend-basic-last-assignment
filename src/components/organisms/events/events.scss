@@ -1,0 +1,72 @@
+@use "../../variables" as *;
+.organisms-events {
+  padding-top: 20px;
+  .event-header {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 32px;
+    .event-title {
+      font-family: $fontfamily-mincho;
+      font-size: $font-sizeXXL;
+      line-height: 57px;
+      margin-right: 16px;
+      .event {
+        margin-top: 16px;
+        font-size: $font-sizeM;
+        line-height: 23px;
+      }
+    }
+  }
+  .event-outline {
+    display: flex;
+    flex-direction: column;
+    .event-link {
+      text-decoration: none;
+      color: $black;
+      &:first-child .date-and-event {
+        border: solid 1px $gray_gainsboro;
+      }
+      .date-and-event {
+        display: flex;
+        border-bottom: solid 1px $gray_gainsboro;
+        border-left: solid 1px $gray_gainsboro;
+        border-right: solid 1px $gray_gainsboro;
+        background-color: $white;
+
+        .event-article-outline {
+          padding: 26px 24px 46px 24px;
+
+          .event-text {
+            font-family: $fontfamily-mincho;
+            font-size: $font-sizeM;
+            line-height: 23px;
+            margin-bottom: 8px;
+          }
+          .event-date {
+            font-family: $fontfamily-mincho;
+            font-size: $font-sizeXS;
+            line-height: 12px;
+            color: $gray_gainsboro;
+          }
+        }
+      }
+    }
+  }
+  .event-list-outline {
+    text-align: right;
+    margin-top: 30px;
+    .event-list {
+      text-decoration: none;
+      color: $black;
+      font-size: $font-sizeS;
+      line-height: 20px;
+      transition: ease 0.2s;
+      i {
+        margin-left: 16px;
+      }
+      &:hover {
+        color: $gray_nobel;
+      }
+    }
+  }
+}
