@@ -1,10 +1,13 @@
 @use "../../variables" as *;
 .card {
+  border-radius: 0%;
+  border: none;
   &::before {
     position: absolute;
     border-bottom: solid 150px transparent;
     border-left: solid 150px white;
     content: "";
+    z-index: 2;
   }
   .card-title {
     padding-left: 6px;
@@ -13,26 +16,30 @@
     font-size: $font-sizeL;
     font-weight: bold;
     margin: 0;
+    z-index: 2;
+  }
+
+  .card-wrapper {
+    overflow: hidden;
+
+    .card-img-top {
+      transition: ease 0.5s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
   }
 }
+
 .card-body {
   padding: 32px;
   background-color: $white-smoke;
 
   .card-text {
-    margin-bottom: 30px;
-    line-height: 42px;
+    margin-top: 32px;
+    line-height: 33px;
     font-size: $font-sizeS;
     text-align: center;
-  }
-}
-a.button {
-  margin: auto;
-  font-size: $font-sizeS;
-  .concept {
-    height: 20px;
-    padding: 17.5px 49px;
-    line-height: 20px;
-    align-items: center;
   }
 }
