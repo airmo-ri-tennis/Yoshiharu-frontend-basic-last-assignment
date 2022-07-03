@@ -19,27 +19,32 @@
     z-index: 2;
   }
 
-  .card-wrapper {
-    overflow: hidden;
+  @media screen and (min-width: $breakpoints-md) {
+    .card-wrapper {
+      overflow: hidden;
 
-    .card-img-top {
-      transition: ease 0.5s;
+      .card-img-top {
+        transition: ease 0.5s;
 
-      &:hover {
-        transform: scale(1.2);
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
   }
-}
-
-.card-body {
-  padding: 32px;
-  background-color: $white-smoke;
-
-  .card-text {
-    margin-top: 32px;
-    line-height: 33px;
-    font-size: $font-sizeS;
-    text-align: center;
+  .card-body {
+    padding: 32px;
+    background-color: $white-smoke;
+    
+    .card-text {
+      margin-top: 32px;
+      line-height: 33px;
+      font-size: $font-sizeS;
+      text-align: center;
+    }
+    .button{
+      margin: auto;
+      margin-bottom: 32px;
+    }
   }
 }
