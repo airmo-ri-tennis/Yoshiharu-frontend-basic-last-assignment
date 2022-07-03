@@ -1,37 +1,40 @@
 @use "../../variables" as *;
 .plan {
+  //display: inline-block;
   margin-bottom: 24px;
   text-align: center;
   padding: 0px;
   .plan-text {
-    margin: -1px;
-    height: 69px;
+    //margin: -1px;
+    //height: 69px;
     background-color: $orange_zorba;
     color: $white;
     padding: 20px;
+    font-size: $font-sizeL;
   }
 
   .price-outline {
-    height: 142px;
+    //height: 142px;
     padding: 24px 0px;
     background-color: $gray_desertStorm;
     border: 1px solid $gray_gainsboro;
-  }
-  .yen {
-    font-size: $font-sizeL;
-    font-weight: bold;
-    color: $orange_bistre;
-  }
-  .five-thouthand {
-    font-weight: bold;
-    font-size: $font-sizeXXL;
-    color: $orange_bistre;
-  }
-  .monthly_amount {
-    font-size: $font-sizeS;
+    .yen {
+      font-size: $font-sizeL;
+      font-weight: bold;
+      color: $orange_bistre;
+    }
+    .five-thouthand {
+      font-weight: bold;
+      font-size: $font-sizeXXL;
+      color: $orange_bistre;
+      margin-left: 4px;
+    }
+    .monthly_amount {
+      font-size: $font-sizeS;
+      margin: 16px 0px 0px 0px;
+    }
   }
   .basic_info {
-    height: 60px;
     padding: 20px;
     background-color: $white;
     font-size: $font-sizeS;
@@ -40,17 +43,34 @@
     border-right: solid 1px $gray_gainsboro;
     border-left: solid 1px $gray_gainsboro;
   }
-}
 
-.plan:nth-child(2) {
-  border: solid 5px $orange_bistre;
-  box-sizing: border-box;
-  .plan-text {
-    background-color: $orange_bistre;
+  &:nth-child(even) {
+    border: solid 5px $orange_bistre;
+
+    .basic_info {
+      &:last-child {
+        padding: 20px 15px 15px;
+      }
+    }
+
+    .plan-text {
+      background-color: $orange_bistre;
+      margin-bottom: 0;
+    }
   }
-}
-@media screen and (min-width: $breakpoints-md) {
-  .plan {
-    margin: 0px;
+  @media screen and (min-width: $breakpoints-md) {
+    .plan {
+      margin: 0;
+      margin-bottom: 40px;
+    }
+    &:nth-child(even) {
+      .basic_info {
+        &:last-child {
+          padding-bottom: 15px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
   }
 }
