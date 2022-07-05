@@ -1,12 +1,10 @@
 @use "../../variables" as *;
 .plan {
-  //display: inline-block;
   margin-bottom: 24px;
   text-align: center;
   padding: 0px;
+  list-style-type: none;
   .plan-text {
-    //margin: -1px;
-    //height: 69px;
     background-color: $orange_zorba;
     color: $white;
     padding: 20px;
@@ -14,7 +12,6 @@
   }
 
   .price-outline {
-    //height: 142px;
     padding: 24px 0px;
     background-color: $gray_desertStorm;
     border: 1px solid $gray_gainsboro;
@@ -43,34 +40,25 @@
     border-right: solid 1px $gray_gainsboro;
     border-left: solid 1px $gray_gainsboro;
   }
-
   &:nth-child(even) {
     border: solid 5px $orange_bistre;
-
-    .basic_info {
-      &:last-child {
-        padding: 20px 15px 15px;
-      }
-    }
-
     .plan-text {
       background-color: $orange_bistre;
       margin-bottom: 0;
+      padding: 15px 20px 20px 20px;
     }
-  }
-  @media screen and (min-width: $breakpoints-md) {
-    .plan {
-      margin: 0;
-      margin-bottom: 40px;
-    }
-    &:nth-child(even) {
-      .basic_info {
-        &:last-child {
-          padding-bottom: 15px;
-          padding-left: 15px;
-          padding-right: 15px;
-        }
+    .basic_info {
+      &:last-child {
+        padding: 20px 15px 16px 15px;
+        border: none
       }
     }
+  }
+  
+}
+@media screen and (min-width: $breakpoints-md) {
+  .plan {
+    margin: 0;
+    margin-bottom: 40px;
   }
 }
