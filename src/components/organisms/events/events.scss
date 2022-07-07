@@ -1,16 +1,24 @@
 @use "../../variables" as *;
 .organisms-events {
-  .news-wraper{
-  .news-title {
-    margin-bottom: 32px;
+  padding-top: 20px;
+
+  .news-wraper {
+    margin: 0px 0px 32px;
+    .news-title {
+      font-family: $fontfamily-mincho;
+      font-size: $font-sizeXXL;
+      line-height: 57px;
+      margin-right: 16px;
+      .announcement {
+        margin-top: 16px;
+        font-size: $font-sizeM;
+        line-height: 23px;
+      }
+    }
   }
-  .announcement{
-    margin-bottom: 49px;
-  }
-}
+
   .event-outline {
-    display: flex;
-    flex-direction: column;
+    border-top: solid 1px $gray_gainsboro;
 
     .event-link {
       text-decoration: none;
@@ -18,27 +26,32 @@
       &:first-child .date-and-event {
         border: solid 1px $gray_gainsboro;
       }
-      .date-and-event {
+      article {
         display: flex;
         border-bottom: solid 1px $gray_gainsboro;
         border-left: solid 1px $gray_gainsboro;
         border-right: solid 1px $gray_gainsboro;
         background-color: $white;
-        flex-shrink: 0;
         &:hover {
-          overflow: hidden;
-          flex-wrap: nowrap;
           .event-img {
             transform: scale(1.2);
           }
         }
-        .event-img {
-          transition-duration: 0.5s;
-          object-fit: cover;
+        .events-img-wrapper {
+          overflow: hidden;
+          flex-shrink: 0;
+          flex-wrap: nowrap;
+          .event-img {
+            transition-duration: 0.5s;
+            object-fit: cover;
+            width: 221.11px;
+            height: 141px;
+          }
         }
 
         .event-article-outline {
-          padding: 26px 24px 46px;
+          padding: 26px 24px;
+
           .event-text {
             font-family: $fontfamily-gothic;
             font-size: $font-sizeM;
@@ -73,10 +86,10 @@
       }
     }
   }
+}
 
-  @media screen and (min-width: $breakpoints-md) {
-    .event-img {
-      display: none;
-    }
+@media screen and (min-width: $breakpoints-md) {
+  .event-img {
+    display: none;
   }
 }
