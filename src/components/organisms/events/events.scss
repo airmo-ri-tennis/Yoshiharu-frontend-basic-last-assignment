@@ -57,6 +57,10 @@
             font-size: $font-sizeM;
             line-height: 23px;
             margin-bottom: 8px;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
           }
           .event-date {
             font-family: $fontfamily-mincho;
