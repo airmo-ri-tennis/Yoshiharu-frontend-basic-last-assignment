@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 .plan {
-  margin-bottom: 24px;
+  margin-bottom: auto;
   text-align: center;
   padding: 0px;
   list-style-type: none;
@@ -9,28 +9,32 @@
     color: $white;
     padding: 20px;
     font-size: $font-sizeL;
+    font-weight: bold;
   }
 
   .price-outline {
     padding: 24px 0px;
     background-color: $gray_desertStorm;
     border: 1px solid $gray_gainsboro;
-    .yen {
-      font-size: $font-sizeL;
-      font-weight: bold;
-      color: $orange_bistre;
-    }
-    .five-thouthand {
-      font-weight: bold;
-      font-size: $font-sizeXXL;
-      color: $orange_bistre;
-      margin-left: 4px;
+    .plan-price {
+      .yen {
+        font-size: $font-sizeL;
+        font-weight: bold;
+        color: $orange_bistre;
+        margin: 29px -4px 16px 0px;
+      }
+      .five-thouthand {
+        font-weight: bold;
+        font-size: $font-sizeXXL;
+        color: $orange_bistre;
+      }
     }
     .monthly_amount {
       font-size: $font-sizeS;
-      margin: 16px 0px 0px 0px;
+      margin: 16px 0px 0px;
     }
   }
+
   .basic_info {
     padding: 20px;
     background-color: $white;
@@ -50,11 +54,10 @@
     .basic_info {
       &:last-child {
         padding: 20px 15px 16px 15px;
-        border: none
+        border: none;
       }
     }
   }
-  
 }
 @media screen and (min-width: $breakpoints-md) {
   .plan {
