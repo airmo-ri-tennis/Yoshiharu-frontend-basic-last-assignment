@@ -3,17 +3,18 @@
   margin-bottom: 32px;
 }
 .news-outline {
-  margin-bottom: 30px;
+  border-top: solid 1px $gray_gainsboro;
   .news-link {
     text-decoration: none;
     &:hover .date-and-content .news-heading {
       color: $orange_bistre;
     }
     .date-and-content {
-      padding: 20px 0px 53px 20px;
-      border: solid 1px $gray_gainsboro;
+      padding: 20px 0px 20px 20px;
+      border-right: solid 1px $gray_gainsboro;
+      border-bottom: solid 1px $gray_gainsboro;
+      border-left: solid 1px $gray_gainsboro;
       color: $black;
-      height: 85px;
       transition: ease 0.2s;
       overflow: hidden;
       white-space: nowrap;
@@ -27,6 +28,7 @@
       line-height: 1;
     }
     .news-heading {
+      margin: 0;
       transition: ease 0.2s;
       text-overflow: ellipsis;
       overflow: hidden;
@@ -35,6 +37,6 @@
   }
 }
 .news_list_outline {
-  margin: 0px 30px 35px 0px;
+  margin: 30px 30px 35px 0px;
   text-align: right;
 }
