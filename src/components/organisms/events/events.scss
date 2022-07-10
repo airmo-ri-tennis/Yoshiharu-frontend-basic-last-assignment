@@ -3,7 +3,7 @@
   padding-top: 20px;
 
   .news-wraper {
-    margin: 0px 0px 32px;
+    margin-bottom: 32px;
     .news-title {
       font-family: $fontfamily-mincho;
       font-size: $font-sizeXXL;
@@ -28,9 +28,8 @@
       }
       article {
         display: flex;
-        border-bottom: solid 1px $gray_gainsboro;
-        border-left: solid 1px $gray_gainsboro;
-        border-right: solid 1px $gray_gainsboro;
+        border: solid 1px $gray_gainsboro;
+        border-top-style: none;
         background-color: $white;
         &:hover {
           .event-img {
@@ -92,7 +91,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoints-md) {
+@media screen and (min-width: $breakpoints-lg) {
   .event-img {
     display: none;
   }
