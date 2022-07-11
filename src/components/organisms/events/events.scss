@@ -50,7 +50,6 @@
 
         .event-article-outline {
           padding: 26px 24px;
-
           .event-text {
             font-family: $fontfamily-gothic;
             font-size: $font-sizeM;
@@ -60,6 +59,9 @@
             overflow: hidden;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
+            &:hover {
+              color: $orange_bistre;
+            }
           }
           .event-date {
             font-family: $fontfamily-mincho;
@@ -91,7 +93,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoints-lg) {
+@media screen and (max-width: $breakpoints-lg) {
   .event-img {
     display: none;
   }
