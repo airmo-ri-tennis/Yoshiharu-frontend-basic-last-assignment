@@ -1,0 +1,40 @@
+@use "../../variables" as *;
+.organisms-top {
+  margin-bottom: 40px;
+  .top-img-wrapper {
+    background-image: url(../../../img/top-image-latte-art.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2 {
+      color: $white;
+      margin: 0;
+      font-size: $font-sizeL;
+      font-family: $fontfamily-mincho;
+    }
+  }
+  .message-wrapper {
+    background-color: $black;
+    color: $white;
+    padding: 34px 20px 33px;
+    text-align: center;
+  }
+}
+@media screen and(min-width:$breakpoints-lg) {
+  .organisms-top {
+    margin-bottom: 30px;
+    .top-img-wrapper {
+      height: 700px;
+      h2 {
+        font-size: $font-sizeXL;
+      }
+    }
+  }
+  .message-wrapper {
+    padding: 52px 49.5px 74px;
+  }
+}
