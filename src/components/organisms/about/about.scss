@@ -1,0 +1,27 @@
+@use "../../variables" as *;
+.Organisms-about {
+  //.container {
+    
+    //.row {
+    //.about-img {
+
+    //}
+    //}
+  //}
+  .message-wrapper {
+    background-color: $white_smoke;
+    text-align: center;
+    padding: 32px 24px;
+    h2 {
+      color: $orange_bistre;
+    }
+  }
+}
+@media (min-width: $breakpoints-lg) {
+  .Organisms-about {
+    padding: 0 16px 100px;
+    .message-wrapper {
+      padding: 52px 26.5px;
+    }
+  }
+}
