@@ -1,22 +1,9 @@
 @use "../../variables" as *;
 .organisms-events {
   padding-top: 20px;
-
   .news-wraper {
     margin-bottom: 32px;
-    .news-title {
-      font-family: $fontfamily-mincho;
-      font-size: $font-sizeXXL;
-      line-height: 57px;
-      margin-right: 16px;
-      .announcement {
-        margin-top: 16px;
-        font-size: $font-sizeM;
-        line-height: 23px;
-      }
-    }
   }
-
   .event-outline {
     border-top: solid 1px $gray_gainsboro;
 
@@ -38,63 +25,39 @@
         }
         .events-img-wrapper {
           overflow: hidden;
-          flex-shrink: 0;
-          flex-wrap: nowrap;
           .event-img {
             transition-duration: 0.5s;
             object-fit: cover;
             width: 221.11px;
             height: 141px;
-          }
-        }
-
-        .event-article-outline {
-          padding: 26px 24px;
-          overflow: hidden;
-          .event-text {
-            font-family: $fontfamily-gothic;
-            font-size: $font-sizeM;
-            line-height: 23px;
-            margin-bottom: 8px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            &:hover {
-              color: $orange_bistre;
+            @media screen and (max-width: $breakpoints-lg) {
+              display: none;
             }
           }
-          .event-date {
-            font-family: $fontfamily-mincho;
-            font-size: $font-sizeXS;
-            line-height: 12px;
-            color: $gray_gainsboro;
+        }
+      }
+      .event-article-outline {
+        padding: 26px 24px;
+        overflow: hidden;
+        .event-text {
+          margin-bottom: 8px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          &:hover {
+            color: $orange_bistre;
           }
+        }
+        .event-date {
+          font-size: $font-sizeXS;
+          line-height: 12px;
+          color: $gray_gainsboro;
         }
       }
     }
   }
-
   .event-list-outline {
     text-align: right;
     margin-top: 30px;
-    .event-list {
-      text-decoration: none;
-      color: $black;
-      font-size: $font-sizeS;
-      line-height: 20px;
-      transition: ease 0.2s;
-      i {
-        margin-left: 16px;
-      }
-      &:hover {
-        color: $gray_nobel;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: $breakpoints-lg) {
-  .event-img {
-    display: none;
   }
 }
