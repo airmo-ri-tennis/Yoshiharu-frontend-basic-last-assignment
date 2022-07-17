@@ -1,13 +1,8 @@
 @use "../../variables" as *;
 .Organisms-about {
-  //.container {
-    
-    //.row {
-    //.about-img {
-
-    //}
-    //}
-  //}
+  .container {
+    max-width: none;
+  }
   .message-wrapper {
     background-color: $white_smoke;
     text-align: center;
