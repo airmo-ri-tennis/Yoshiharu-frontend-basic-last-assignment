@@ -34,9 +34,9 @@
   }
   .card-body {
     background-color: $white-smoke;
-
+    padding: 0;
     .card-text {
-      margin: 32px 0px 30px 0px;
+      margin: 32px 0px 30px;
       line-height: 33px;
       font-size: $font-sizeS;
       text-align: center;
