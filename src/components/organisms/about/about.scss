@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 .Organisms-about {
-  .container {
-    max-width: none;
+  @media screen and (min-width: $breakpoints-lg) {
+    padding: 0 16px 100px;
   }
   .message-wrapper {
     background-color: $white_smoke;
@@ -10,12 +10,7 @@
     h2 {
       color: $orange_bistre;
     }
-  }
-}
-@media (min-width: $breakpoints-lg) {
-  .Organisms-about {
-    padding: 0 16px 100px;
-    .message-wrapper {
+    @media screen and (min-width: $breakpoints-lg) {
       padding: 52px 26.5px;
     }
   }
