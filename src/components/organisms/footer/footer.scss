@@ -1,0 +1,88 @@
+@use "../../variables" as *;
+footer {
+  .footer-top {
+    text-align: center;
+    padding: 32px 20px;
+    .logo-Switch {
+      margin-bottom: 20px;
+      width: 150px;
+      height: 25.7px;
+    }
+    .company-basic-information {
+      margin-bottom: 20.87px;
+      line-height: 2;
+      font-size: $font-sizeS;
+    }
+    .footer-top-icon {
+      a {
+        text-decoration: none;
+        color: $black;
+        i {
+          padding: 0 7px;
+          transition: color 0.2s;
+          &:hover {
+            color: $gray-nobel;
+          }
+        }
+      }
+    }
+  }
+  .footer-nav {
+    background-color: $white_smoke;
+    nav {
+      .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-top: 1px solid $gray-nobel;
+        border-bottom: 1px solid $gray-nobel;
+        padding: 16px;
+        margin-bottom: 0;
+        li {
+          padding-bottom: 8px;
+          width: 50%;
+          list-style-type: none;
+          font-size: $font-sizeS;
+          a {
+            text-decoration: none;
+            color: $black;
+            transition: color 0.2s;
+            &:hover {
+              color: $orange_bistre;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    padding: 16px;
+    font-size: $font-sizeXS;
+    line-height: 1.2;
+  }
+}
+@media screen and(min-width:$breakpoints-md) {
+  footer {
+    .footer-top {
+      padding: 52px 134.5px 52.88px;
+    }
+
+    .footer-nav {
+      justify-content: center;
+      nav {
+        .nav-list {
+          flex-wrap: nowrap;
+          align-items: center;
+          li {
+            width: auto;
+            padding: 0 8px;
+            border-right: 1px solid $black;
+          }
+        }
+      }
+    }
+  }
+}
