@@ -35,15 +35,15 @@
   .card-body {
     background-color: $white-smoke;
     padding: 0;
+    padding: 32px 0;
     .card-text {
-      margin: 32px 0px 30px;
+      margin: 0 0 30px;
       line-height: 33px;
       font-size: $font-sizeS;
       text-align: center;
     }
     .button {
       margin: auto;
-      margin-bottom: 32px;
     }
   }
 }
