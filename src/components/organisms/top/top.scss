@@ -1,0 +1,41 @@
+@use "../../variables" as *;
+.organisms-top {
+  margin-bottom: 40px;
+  .top-img-wrapper {
+    background-image: url(../../../img/top-image-latte-art.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    background-position: center;
+    background-repeat: no-repeat;
+    h2 {
+      color: $white;
+      margin: 0;
+      font-size: $font-sizeL;
+      font-family: $fontfamily-mincho;
+      writing-mode: vertical-rl;
+    }
+  }
+  .message-wrapper {
+    background-color: $black;
+    color: $white;
+    padding: 34px 20px 33px;
+    text-align: center;
+  }
+}
+@media screen and(min-width:$breakpoints-lg) {
+  .organisms-top {
+    margin-bottom: 30px;
+    .top-img-wrapper {
+      min-height: 100vh;
+      h2 {
+        font-size: $font-sizeXL;
+      }
+    }
+  }
+  .message-wrapper {
+    padding: 52px 49.5px 74px;
+  }
+}
