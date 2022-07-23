@@ -1,0 +1,76 @@
+@use "../../variables" as *;
+.organisms-events {
+  padding-top: 20px;
+  .news-wraper {
+    margin-bottom: 32px;
+  }
+  .event-outline {
+    border-top: solid 1px $gray_gainsboro;
+    .event-link {
+      text-decoration: none;
+      color: $black;
+      &:first-child .date-and-event {
+        border: solid 1px $gray_gainsboro;
+      }
+      article {
+        display: flex;
+        border: solid 1px $gray_gainsboro;
+        border-top-style: none;
+        background-color: $white;
+        &:hover {
+          .event-img {
+            transform: scale(1.2);
+          }
+        }
+        .events-img-wrapper {
+          overflow: hidden;
+          flex: 0 0 auto;
+          width: 221.11px;
+          height: 141px;
+          .event-img {
+            transition-duration: 0.5s;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            @media screen and (max-width: $breakpoints-lg) {
+              display: none;
+            }
+          }
+        }
+      }
+      .event-article-outline {
+        padding: 0px 24px;
+        overflow: hidden;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .event-text {
+          margin-bottom: 8px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          &:hover {
+            color: $orange_bistre;
+          }
+          @media screen and (min-width: $breakpoints-lg) {
+            white-space: normal;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+          }
+        }
+        .event-date {
+          font-size: $font-sizeXS;
+          line-height: 12px;
+          color: $gray_gainsboro;
+        }
+      }
+    }
+  }
+  .event-list-outline {
+    text-align: right;
+    margin-top: 30px;
+  }
+}
