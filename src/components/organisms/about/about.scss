@@ -1,0 +1,17 @@
+@use "../../variables" as *;
+.Organisms-about {
+  @media screen and (min-width: $breakpoints-lg) {
+    padding: 0 16px 100px;
+  }
+  .message-wrapper {
+    background-color: $white_smoke;
+    text-align: center;
+    padding: 32px 24px;
+    h2 {
+      color: $orange_bistre;
+    }
+    @media screen and (min-width: $breakpoints-lg) {
+      padding: 52px 26.5px;
+    }
+  }
+}
