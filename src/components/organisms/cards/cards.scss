@@ -1,0 +1,6 @@
+@use "../../variables" as *;
+@media screen and(max-width: $breakpoints-md) {
+  .col {
+    margin-bottom: 40px;
+  }
+}
