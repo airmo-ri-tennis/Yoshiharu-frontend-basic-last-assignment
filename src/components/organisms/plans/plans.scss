@@ -7,6 +7,7 @@
 }
 .button {
   margin: auto;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: $breakpoints-md) {
   .plan-table-wrapper {
@@ -17,5 +18,8 @@
     .plan {
       margin-bottom: 40px;
     }
+  }
+  .button{
+    margin-bottom: 100px;
   }
 }
