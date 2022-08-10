@@ -1,8 +1,5 @@
 @use "../../variables" as *;
 .organisms-plans {
-  .message-wrapper {
-    text-align: center;
-  }
   .plan-table-wrapper {
     @media screen and (min-width: $breakpoints-md) {
       display: grid;
@@ -17,10 +14,8 @@
       }
     }
   }
-  .plan-fee-button {
-    .button {
-      margin: auto;
-      margin-bottom: 15px;
-    }
+  .button {
+    margin: auto;
+    margin-bottom: 15px;
   }
 }
