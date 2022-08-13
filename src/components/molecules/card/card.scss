@@ -35,7 +35,10 @@
   .card-body {
     background-color: $white-smoke;
     padding: 0;
-    padding: 32px 20px;
+    padding: 32px 35px;
+    @media screen and (max-width: $breakpoints-md) {
+      padding: 32px 46.5px;
+    }
     .card-text {
       margin: 0 0 30px;
       line-height: 33px;
