@@ -14,12 +14,12 @@
   }
   .navbar-nav {
     margin-left: 16px;
-    //display: flex;
     .nav-item {
       font-size: $font-sizeS;
       padding: 15px 0px;
       .nav-link {
         padding: 0;
+        text-decoration: none;
         @media screen and(min-width:$breakpoints-xl) {
           padding: 15px;
         }
@@ -44,22 +44,20 @@
     .nav-link.concept-lg {
       padding: 15px 0;
     }
-    /*.icon-img-wrapper {
-        padding-top: 15px;
-        padding-bottom: 0px;
-      }*/
     .submenu {
+      padding: 0;
       .dropdown-toggle::after {
         display: none;
       }
-      //.collapse submenu{
-      //padding: 0;
-      // margin-left: 12px;
-      //background-color: $black;
-      .dropdown-item {
-        padding: 15px 0px;
-        background-color: $black;
-        color: $white;
+      li {
+        list-style: none;
+        text-decoration: none;
+        .dropdown-item {
+          padding: 15px 0px;
+          background-color: $black;
+          color: $white;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -68,7 +66,9 @@
 @media screen and(min-width: $breakpoints-xl) {
   .navbar {
     background-color: $black_50;
+    padding: 0px 30px;
     .navbar-brand {
+      padding: 33px 0px;
       img {
         width: 140px;
       }
@@ -90,18 +90,16 @@
         &:hover {
           .collapse.submenu {
             display: block;
-            position: absolute;
             width: 220px;
             top: 100%;
-
             :hover {
               background-color: $orange_bistre;
             }
           }
         }
-        .nav-item-concept-top {
-          .nav-link.concept {
-          }
+        .collapse.submenu {
+          position: absolute;
+          display: none;
         }
         .dropdown-menu {
           transition-duration: 0.2s;
