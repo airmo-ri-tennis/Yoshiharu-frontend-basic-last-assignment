@@ -26,6 +26,7 @@
       }
     }
     .nav-item.active.dropdown {
+      padding: 0;
       .nav-item-concept-top {
         position: relative;
         .plus-img {
@@ -53,7 +54,7 @@
         list-style: none;
         text-decoration: none;
         .dropdown-item {
-          padding: 15px 0px;
+          padding: 18px;
           background-color: $black;
           color: $white;
           text-decoration: none;
@@ -87,6 +88,7 @@
       }
       .nav-item.active.dropdown {
         position: relative;
+        padding: 15px 0px;
         &:hover {
           .collapse.submenu {
             display: block;
