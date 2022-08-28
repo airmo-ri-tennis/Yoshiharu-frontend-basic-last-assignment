@@ -1,6 +1,16 @@
 @use "../../variables" as *;
 .News-and-Events {
+  background-color: $white_smoke;
   .news.col {
     margin-top: 20px;
+    padding-right: 20px;
+    .news-outline {
+      background-color: $white;
+    }
+  }
+  .events.col {
+    @media screen and (min-width: $breakpoints-lg) {
+      padding-left: 20;
+    }
   }
 }

@@ -1,6 +1,8 @@
 @use "../../variables" as *;
 .organisms-events {
-  padding-top: 20px;
+  @media screen and (min-width: $breakpoints-lg) {
+    padding-top: 20px;
+  }
   .news-wraper {
     margin-bottom: 32px;
   }
