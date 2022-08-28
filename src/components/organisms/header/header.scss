@@ -1,0 +1,115 @@
+@use "../../variables" as *;
+.navbar {
+  padding: 0 16px;
+  background-color: $black;
+  .navbar-brand {
+    margin: 0;
+    padding: 18px 0;
+    img {
+      width: 120px;
+    }
+  }
+  .navbar-toggler {
+    outline: none;
+    border: none;
+  }
+  .navbar-nav {
+    margin-left: 16px;
+    .nav-item {
+      font-size: $font-sizeS;
+      padding: 15px 0px;
+      .nav-link {
+        padding: 0;
+        text-decoration: none;
+        @media screen and(min-width:$breakpoints-xl) {
+          padding: 15px;
+        }
+      }
+    }
+    .nav-item.active.dropdown {
+      padding: 0;
+      .nav-item-concept-top {
+        position: relative;
+        .plus-img {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+    .nav-link.concept {
+      text-decoration: none;
+      padding: 15px 0;
+      color: $white;
+      cursor: pointer;
+    }
+    .nav-link.concept-lg {
+      padding: 15px 0;
+    }
+    .submenu {
+      padding: 0;
+      .dropdown-toggle::after {
+        display: none;
+      }
+      li {
+        list-style: none;
+        text-decoration: none;
+        .dropdown-item {
+          padding: 15px 0px;
+          background-color: $black;
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: $breakpoints-xl) {
+  .navbar {
+    background-color: $black_50;
+    padding: 0px 30px;
+    .navbar-brand {
+      padding: 33px 0px;
+      img {
+        width: 140px;
+      }
+    }
+    .navbar-nav {
+      margin-right: 30px;
+      margin-left: auto;
+      .nav-item.active {
+        .nav-link {
+          padding: 20px;
+          transition-duration: 0.2s;
+          &:hover {
+            color: $gray_nobel;
+          }
+        }
+      }
+      .nav-item.active.dropdown {
+        position: relative;
+        padding: 15px 0px;
+        &:hover {
+          .collapse.submenu {
+            display: block;
+            width: 220px;
+            top: 100%;
+          }
+        }
+        .collapse.submenu {
+          position: absolute;
+          display: none;
+          .dropdown-item {
+            transition-duration: 0.2s;
+            padding: 18px;
+            &:hover {
+              background-color: $orange_bistre;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
