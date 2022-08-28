@@ -11,6 +11,7 @@
   }
   .navbar-toggler {
     outline: none;
+    border: none;
   }
   .navbar-nav {
     margin-left: 16px;
@@ -54,7 +55,7 @@
         list-style: none;
         text-decoration: none;
         .dropdown-item {
-          padding: 18px;
+          padding: 15px 0px;
           background-color: $black;
           color: $white;
           text-decoration: none;
@@ -94,25 +95,14 @@
             display: block;
             width: 220px;
             top: 100%;
-            :hover {
-              background-color: $orange_bistre;
-            }
           }
         }
         .collapse.submenu {
           position: absolute;
           display: none;
-        }
-        .dropdown-menu {
-          transition-duration: 0.2s;
-          transform: translateY(-10px);
           .dropdown-item {
             transition-duration: 0.2s;
-            padding: 18px 50px 18px 18px;
-            &:hover {
-              background-color: $orange_bistre;
-              color: $white;
-            }
+            padding: 18px;
           }
         }
       }
