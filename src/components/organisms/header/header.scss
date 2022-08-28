@@ -103,6 +103,10 @@
           .dropdown-item {
             transition-duration: 0.2s;
             padding: 18px;
+            &:hover {
+              background-color: $orange_bistre;
+              color: $white;
+            }
           }
         }
       }
