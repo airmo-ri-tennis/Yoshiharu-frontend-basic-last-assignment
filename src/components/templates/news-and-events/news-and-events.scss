@@ -1,8 +1,8 @@
 @use "../../variables" as *;
 .News-and-Events {
   background-color: $white_smoke;
+  padding: 56px 16px;
   .news.col {
-    margin-top: 20px;
     padding-right: 20px;
     .news-outline {
       background-color: $white;
