@@ -1,6 +1,5 @@
 @use "../../variables" as *;
 .organisms-events {
-  padding-top: 20px;
   .news-wraper {
     margin-bottom: 32px;
   }
@@ -26,7 +25,10 @@
           overflow: hidden;
           flex: 0 0 auto;
           width: 221.11px;
-          height: 141px;
+          height: 144px;
+          @media screen and (max-width: $breakpoints-lg) {
+            display: none;
+          }
           .event-img {
             transition-duration: 0.5s;
             object-fit: cover;
@@ -39,7 +41,7 @@
         }
       }
       .event-article-outline {
-        padding: 0px 24px;
+        padding: 26px 24px;
         overflow: hidden;
         flex: 1 1 auto;
         display: flex;
