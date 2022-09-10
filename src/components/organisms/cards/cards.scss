@@ -1,8 +1,14 @@
 @use "../../variables" as *;
 .organisms-cards {
-  @media screen and(max-width: $breakpoints-md) {
-    .col {
-      margin-bottom: 40px;
+  .row {
+    margin: 0px 24px;
+    .container {
+      .col {
+        padding: 0px 0px 100px 0px;
+        @media screen and(max-width: $breakpoints-md) {
+          margin-bottom: 40px;
+        }
+      }
     }
   }
 }
