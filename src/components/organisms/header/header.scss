@@ -2,9 +2,12 @@
 .navbar {
   padding: 0 16px;
   background-color: $black;
+  position: absolute;
+  width: 100%;
   .navbar-brand {
     margin: 0;
     padding: 18px 0;
+    
     img {
       width: 120px;
     }
@@ -71,7 +74,7 @@
     padding: 0px 30px;
     position: absolute;
     .navbar-brand {
-      padding: 33px 280px 33px 0px;
+      padding: 33px 300px 33px 0px;
       img {
         width: 140px;
       }

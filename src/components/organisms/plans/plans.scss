@@ -5,7 +5,10 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
-      margin: 0px 24px 0px;
+      //margin: 0px 24px 0px;
+    }
+    .row {
+      display: flex;
     }
     .plan {
       margin-bottom: 24px;
