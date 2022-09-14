@@ -5,8 +5,8 @@
       .col-md-4 {
         padding: 0px 12px;
       }
-      @media screen and(min-width: $breakpoints-lg) {
-        padding: 0px 0px 100px 0px;
+      @media screen and(min-width: $breakpoints-md) {
+        margin: 0px 0px 100px 0px;
       }
       .card {
         @media screen and(max-width: $breakpoints-md) {
